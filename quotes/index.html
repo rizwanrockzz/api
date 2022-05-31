@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quotes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lato', sans-serif;
+        }
+
+        nav .heading {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #59C173;
+            background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
+            background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
+            height: 80px;
+            color: white;
+        }
+
+        .box {
+            margin: 50px;
+            padding: 50px;
+            background: gray;
+            height: 100%;
+            border-radius: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            position: relative;
+            background: #88b7d5;
+            border: 4px solid #c2e1f5;
+        }
+
+        .box:after,
+        .box:before {
+            right: 100%;
+            top: 50%;
+            border: solid transparent;
+            content: "";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+
+        .box:after {
+            border-color: rgba(136, 183, 213, 0);
+            border-right-color: #88b7d5;
+            border-width: 30px;
+            margin-top: -30px;
+        }
+
+        .box:before {
+            border-color: rgba(194, 225, 245, 0);
+            border-right-color: #c2e1f5;
+            border-width: 36px;
+            margin-top: -36px;
+        }
+/* 
+        .quote{
+            font-style: italic;
+        } */
+
+        .gifs{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gifs img{
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1 class="heading">The Best Quotes Of Famous People</h1>
+    </nav>
+
+    <div class="box">
+        <h1 class="quote"></h1>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>

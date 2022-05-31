@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  background: #8a2387;
+  background: -webkit-linear-gradient(to right, #f27121, #e94057, #8a2387);
+  background: linear-gradient(to right, #f27121, #e94057, #8a2387);
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 10vh; */
+}
+
+nav h1 {
+    color: white;
+  text-align: center;
+  text-transform: uppercase;
+  /* margin: 20px 0 45px; */
+}
+
+.flex {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  flex-direction: column;
+}
+
+#container {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 0.4fr 0.5fr 0.8fr 1fr 1fr 1.5fr 1.5fr;
+  justify-content: space-around;
+  align-items: center;
+  background: #8e2de2;
+  background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
+  background: linear-gradient(to right, #4a00e0, #8e2de2);
+  color: white;
+  margin: 20px 30px;
+  height: 85px;
+  border-radius: 30px;
+}
+
+#container:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+#container p,img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container p{
+    text-align: center;
+}
+
+#container img {
+  width: 50px;
+}
+
+footer{
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-bottom: 40px;
+}
+
+footer p{
+    text-align: center;
+}
+
+.fa-heart{
+    color: red;
+    margin: 0 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    #container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 1.5rem;
+    }
+
+    #container p{
+        padding: 1.2rem;
+    }
+
+    #container img {
+        width: 80px;
+    }
+}

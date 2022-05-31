@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giphy API</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lato', sans-serif;
+        }
+
+        nav .heading {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #59C173;
+            background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
+            background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
+            height: 80px;
+            color: white;
+        }
+
+
+        .random-sticker,
+        .trending-sticker,
+        .random-meme,
+        .trending-meme {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .random-sticker img,
+        .trending-sticker img,
+        .random-meme img,
+        .trending-meme img {
+            width: 300px;
+            /* height: 300px; */
+        }
+
+        .sticker-grid,
+        .meme-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+
+        h3 {
+            text-align: center;
+            margin: 30px;
+            font-size: 1.5rem;
+        }
+
+        @media only screen and (max-width: 600px) {
+
+            .sticker-grid,
+            .meme-grid {
+                grid-template-columns: 1fr;
+                /* margin: 40px; */
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1 class="heading">GIPHY MEME'S and STICKERS API</h1>
+    </nav>
+
+    <h3>Stickers</h3>
+    <div class="sticker-grid">
+        <div class="random-sticker"></div>
+        <div class="trending-sticker"></div>
+    </div>
+
+    <h3>Memes</h3>
+    <div class="meme-grid">
+        <div class="random-meme"></div>
+        <div class="trending-meme"></div>
+    </div>
+
+</body>
+<script src="app.js"></script>
+
+</html>
