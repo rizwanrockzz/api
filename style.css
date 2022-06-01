@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Blaka&family=Caveat:wght@400;500;600;700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+html{
+}
+
+body {
+  /* font-family: "Lato", sans-serif; */
+  font-family: 'Roboto Mono', monospace;
+}
+
+nav {
+  background: #009fff;
+  background: -webkit-linear-gradient(to left, #ec2f4b, #009fff);
+  background: linear-gradient(to left, #ec2f4b, #009fff);
+  padding: 1.3rem;
+  color: white;
+}
+
+.main-heading {
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-size: 2.2rem;
+  letter-spacing: 4px;
+  padding: 10px;
+}
+
+.btn-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px;
+  padding: 1rem;
+}
+
+.btn-section .btn {
+  padding: 15px;
+  background: #8a2387;
+  background: -webkit-linear-gradient(to right, #f27121, #e94057, #8a2387);
+  background: linear-gradient(to right, #f27121, #e94057, #8a2387);
+  border: none;
+  border-radius: 10px;
+  margin: 20px 0;
+  width: 210px;
+  font-size: 1rem;
+}
+
+.btn-section .btn:hover {
+  background: #8a2387;
+  background: -webkit-linear-gradient(to left, #f27121, #e94057, #8a2387);
+  background: linear-gradient(to left, #f27121, #e94057, #8a2387);
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.gradient-img{
+    position: absolute;
+    width: 165px;
+    bottom: -10px;
+    right: 5px;
+
+}
+
+.footer{
+    text-align: center;
+    font-size: 1.1rem;
+
+}
+
+.fa-heart{
+    color: red;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .gradient-img{
+        width: 70px;
+    }
+}
+
