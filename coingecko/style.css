@@ -20,7 +20,7 @@ nav {
 }
 
 nav h1 {
-    color: white;
+  color: white;
   text-align: center;
   text-transform: uppercase;
   /* margin: 20px 0 45px; */
@@ -39,9 +39,10 @@ nav h1 {
   grid-template-columns: 0.4fr 0.5fr 0.8fr 1fr 1fr 1.5fr 1.5fr;
   justify-content: space-around;
   align-items: center;
-  background: #8e2de2;
-  background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
-  background: linear-gradient(to right, #4a00e0, #8e2de2);
+  background: #ff00cc;
+  background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+  background: linear-gradient(to right, #333399, #ff00cc);
+
   color: white;
   margin: 20px 30px;
   height: 85px;
@@ -53,48 +54,50 @@ nav h1 {
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-#container p,img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+#container p,
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#container p{
-    text-align: center;
+#container p {
+  text-align: center;
 }
 
 #container img {
   width: 50px;
+  border-radius: 50%;
 }
 
-footer{
-    font-size: 1.2rem;
-    padding: 1rem;
-    margin-bottom: 40px;
+footer {
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-bottom: 40px;
 }
 
-footer p{
-    text-align: center;
+footer p {
+  text-align: center;
 }
 
-.fa-heart{
-    color: red;
-    margin: 0 5px;
+.fa-heart {
+  color: red;
+  margin: 0 5px;
 }
 
 @media only screen and (max-width: 600px) {
-    #container{
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        padding: 1.5rem;
-    }
+  #container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1.5rem;
+  }
 
-    #container p{
-        padding: 1.2rem;
-    }
+  #container p {
+    padding: 1.2rem;
+  }
 
-    #container img {
-        width: 80px;
-    }
+  #container img {
+    width: 80px;
+  }
 }
